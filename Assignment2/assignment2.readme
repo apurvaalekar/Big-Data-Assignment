@@ -1,0 +1,31 @@
+hadoop commands for executing map reduce programs for five question.
+In "Yelp" folder, the target sub folder contains the jar.
+
+Arguments are specified at the end of commands
+
+Q1.	For	all	the	businesses that	are	located	in	“Palo	Alto”,	output	their full address	and	 also how many businesses are in each address. You can use the	full_address column	as	
+the	filter	column.	
+hadoop jar yelp-0.0.1-SNAPSHOT.jar assignment2.yelp.PaloAlto hdfs://cshadoop1/yelp/business/business.csv hdfs://cshadoop1/user/aaa161530/Assignment2Q1
+
+Q2.	Modify	Q1 to output business id	and	full_address of	Restaurants that are located in	the	state of NY.	
+
+hadoop jar yelp-0.0.1-SNAPSHOT.jar assignment2.yelp.NYBusiness hdfs://cshadoop1/yelp/business/business.csv hdfs://cshadoop1/user/aaa161530/Assignment2Q2
+
+
+Q3.	You	would like to find the top	10	zip	codes	where the most businesses are located.	
+To	accomplish	this, you will emit the	following (K,V) pair from mapper (ZipCode,1).	
+
+hadoop jar yelp-0.0.1-SNAPSHOT.jar assignment2.yelp.TopTen hdfs://cshadoop1/yelp/business/business.csv hdfs://cshadoop1/user/aaa161530/Assignment2Q3
+
+
+Q4.	Find	the	top	ten	rated	businesses	using	the	average	ratings. Recall that star column in	review.csv	file represents	the	rating.
+hadoop jar yelp-0.0.1-SNAPSHOT.jar assignment2.yelp.TopTenStarRating hdfs://cshadoop1/yelp/review/review.csv hdfs://cshadoop1/user/aaa161530/Assignment2Q4
+
+
+Q5.	Modify	Q4 to	find	out	the	10	businesses	that	have	received	the	lowest	average	ratings.	
+hadoop jar yelp-0.0.1-SNAPSHOT.jar assignment2.yelp.LowestAverageRating hdfs://cshadoop1/yelp/review/review.csv hdfs://cshadoop1/user/aaa161530/Assignment2Q5
+
+
+ 
+ 
+ 
