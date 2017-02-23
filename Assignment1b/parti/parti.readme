@@ -1,0 +1,14 @@
+ReadME
+1. Import the given projects as maven project into eclipse
+2. Run project as maven build in eclipse
+3. We have downloaded the file of postive and negarive words from the given URL and its in the project's directory.
+4. Copy the jar file created from the target folder in eclipse workspace into cs6360.utdallas.edu server.
+5. For getting the required files run the following jar command (previous assignment 1 a part 1).
+	hadoop jar partI.uploadDownload-0.0.1-SNAPSHOT.jar hdfs.assignment1.partI.uploadDownload.assignment1 /home/012/a/ad/adj160230/assignment1 hdfs://cshadoop1/user/adj160230/assignment
+6. Run the coomand as below:
+hadoop jar wordCount-0.0.1-SNAPSHOT.jar assignment1b.part1.wordCount.WordCount hdfs://cshadoop1/user/adj160230/assignment  hdfs://cshadoop1/user/adj160230/output
+hdfs://cshadoop1/user/adj160230/assignment  - contains all the downloaded 6 files
+hdfs://cshadoop1/user/adj160230/output - output directory
+
+7.Make sure the output path you give (2nd argument) is a new directory (not previously exisitng directory).
+8.The ouptput of the reducer would be printed on console.

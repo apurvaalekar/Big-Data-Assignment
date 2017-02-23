@@ -1,0 +1,13 @@
+ReadME
+1. Import the given projects as maven project into eclipse
+2. Configure the build path of external jar into Eclipse.( Stanford POS tagger jar - add into build path)
+3.Please keep bidirectional-distsim-wsj-0-18.tagger and bidirectional-distsim-wsj-0-18.tagger.props in project's parent folder .
+2. Run project as maven build in eclipse
+3. Copy the jar file created from the target folder in eclipse workspace into cs6360.utdallas.edu
+4. For getting the required wikipedia text : run the following command:(assignment 1 , part II)
+
+	hadoop jar partII.uploadZipDownloadZip-0.0.1-SNAPSHOT.jar hdfs.assignment1.partII.uploadZipDownloadZip.assignment1_p2 /home/012/a/ad/adj160230/assignment1 hdfs://cshadoop1/user/adj160230/assignment1
+5. Run the haddop command as below:
+	hadoop jar POS-0.0.1-SNAPSHOT.jar assignment1b.part1.POS.PartOfSpeech hdfs://cshadoop1/user/adj160230/assignment  hdfs://cshadoop1/user/adj160230/output
+6.Make sure the output path you give (2nd argument) is a new directory (not previously exisitng directory).
+7.The ouptput of the reducer would be in the given output path directory (which is provided in command line argument)with file name "part-r-00000".
