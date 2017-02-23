@@ -1,0 +1,17 @@
+Read Me
+Corpus used for part 2: http://corpus.byu.edu/wikitext-samples/text.zip
+
+1. Import the given projects as maven project into eclipse
+2. Run project as maven build in eclipse
+3. Copy the jar file created from the target folder in eclipse workspace into
+the user Hadoop directory
+4. Run the commands shown Commands for Part 2:
+Hadoop command:
+hadoop jar partII.uploadZipDownloadZip-0.0.1-SNAPSHOT.jar hdfs.assignment1.partII.uploadZipDownloadZip.assignment1_p2 /home/012/a/ad/adj160230/assignment1 hdfs://cshadoop1/user/adj160230/assignment1
+
+No. of arguments: 2
+First Argument: local path where all the files will be downloaded initially
+Second Argument: path on Hadoop where we want to upload our files
+
+5. All the unzipped files for the part 2 will be found into the destination folder that you have mentioned (command line argument).
+6. Initially downloaded zip files will be deleted and only unzipped files will be available to view on destination folder. 
